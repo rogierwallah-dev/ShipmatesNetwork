@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipmates Network - Fiber Optic Internet Service Provider</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        :root {
+            --color-primary: #0A1931;
+            --color-accent: #00BCD4;
+            --color-light: #F7F7F7;
+        }
+
+        .bg-primary { background-color: var(--color-primary); }
+        .text-primary { color: var(--color-primary); }
+        .bg-accent { background-color: var(--color-accent); }
+        .text-accent { color: var(--color-accent); }
+        .border-accent { border-color: var(--color-accent); }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--color-accent);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0A1931;
+        }
+
+        input:focus, textarea:focus, button:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(0, 188, 212, 0.1);
+        }
+
+        * {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+
+<body class="font-sans text-gray-800 bg-white">
+    <div id="root">
+        <nav class="sticky top-0 z-50 bg-white shadow-lg">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-16">
+                    <a href="#hero" class="flex-shrink-0 text-xl font-extrabold text-primary">
+                        <span class="text-accent">SHIPMATES</span>NETWORK
+                    </a>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="#packages" class="text-primary hover:text-accent px-3 py-2 rounded-md text-sm font-medium transition duration-300">Packages</a>
+                        <a href="#features" class="text-primary hover:text-accent px-3 py-2 rounded-md text-sm font-medium transition duration-300">Features</a>
+                        <a href="#contact" class="text-primary hover:text-accent px-3 py-2 rounded-md text-sm font-medium transition duration-300">Contact</a>
+                        <a href="#contact" class="bg-accent text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-opacity-90 transition duration-300 ml-4 shadow-md">Check Availability</a>
+                    </div>
+                    <div class="-mr-2 flex items-center sm:hidden">
+                        <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-primary hover:text-accent focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <header id="hero" class="bg-primary text-white py-20 lg:py-32">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-5xl lg:text-7xl font-extrabold mb-4 leading-tight">
+                    Fast <span class="text-accent">Fiber Internet</span>
+                </h1>
+                <p class="text-3xl lg:text-4xl font-semibold mb-6 text-accent">
+                    Plans starting at just ₱850/month
+                </p>
+                <p class="text-xl lg:text-2xl mb-8 text-gray-300">
+                    Experience the speed and reliability of fiber optic technology.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#packages" class="bg-accent text-primary font-bold py-3 px-8 rounded-full text-lg hover:bg-opacity-90 transition duration-300 shadow-xl transform hover:scale-105">
+                        View Our Packages
+                    </a>
+                    <a href="#contact" class="bg-white text-primary font-bold py-3 px-8 rounded-full text-lg hover:bg-gray-100 transition duration-300 shadow-xl transform hover:scale-105">
+                        Check Availability
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <section id="features" class="py-16 lg:py-24 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl lg:text-4xl font-bold text-center text-primary mb-12">Why Choose Shipmates Network?</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    
+                    <div class="p-6 bg-white rounded-xl shadow-lg transform hover:scale-105 transition duration-500 border-t-4 border-accent">
+                        <svg class="w-12 h-12 text-accent mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                        <h3 class="text-xl font-semibold mb-2 text-primary">Fast Speed</h3>
+                        <p class="text-gray-600">Experience ultra-fast fiber optic internet speeds. Perfect for streaming, gaming, and working from home.</p>
+                    </div>
+                    
+                    <div class="p-6 bg-white rounded-xl shadow-lg transform hover:scale-105 transition duration-500 border-t-4 border-accent">
+                        <svg class="w-12 h-12 text-accent mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.21a4.803 4.803 0 00-6.19-2.924m-4.047 1.487l-.014.014a4.803 4.803 0 00-1.741 6.545m6.702 1.432a4.803 4.803 0 005.152-3.805m-4.046-1.487l.014.014a4.803 4.803 0 001.741-6.545"></path>
+                        </svg>
+                        <h3 class="text-xl font-semibold mb-2 text-primary">No Data Caps</h3>
+                        <p class="text-gray-600">Stay connected when it matters most.</p>
+                    </div>
+
+                    <div class="p-6 bg-white rounded-xl shadow-lg transform hover:scale-105 transition duration-500 border-t-4 border-accent">
+                        <svg class="w-12 h-12 text-accent mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586L6 14.828V16a2 2 0 01-2-2v-6a2 2 0 012-2h2"></path>
+                        </svg>
+                        <h3 class="text-xl font-semibold mb-2 text-primary">24/7 Support</h3>
+                        <p class="text-gray-600">Our support team is available to assist you with any questions or concerns.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="packages" class="py-16 lg:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center text-primary mb-4">Our Affordable Fiber Plans</h2>
+                <p class="text-center text-xl text-gray-600 mb-6">Find the perfect speed for your home or business.</p>
+
+                <div class="bg-accent text-primary p-4 rounded-lg shadow-md mb-12 text-center text-lg font-semibold border-b-4 border-primary">
+                    <p>
+                        <span class="font-extrabold mr-4">ALL PLANS INCLUDE:</span> 
+                        FREE Modem <span class="mx-4 text-gray-800">|</span> 
+                        <span class="text-white bg-primary py-1 px-3 rounded-full text-base font-bold">Unlimited Data Usage</span> <span class="mx-4 text-gray-800">|</span> 
+                        One-time Installation Fee: <span class="text-red-700 font-extrabold">₱1,500 ONLY</span>
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <div class="p-8 border-2 border-gray-200 rounded-xl shadow-xl hover:border-accent transition duration-300 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold text-primary mb-2">Basic</h3>
+                            <p class="text-sm text-gray-500 mb-4">Perfect for casual browsing and basic streaming.</p>
+                            <div class="text-4xl font-extrabold text-accent mb-4">
+                                ₱850 <span class="text-xl text-gray-600 font-normal">/ month</span>
+                            </div>
+                            <div class="text-5xl font-extrabold text-primary mb-6">100<span class="text-3xl">Mbps</span></div>
+                            
+                            <ul class="space-y-3 text-gray-600 mb-8">
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Stable connection for 3-6 devices
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Standard Definition Streaming
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Basic Work From Home
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="mt-4 text-center block bg-primary text-white font-semibold py-3 rounded-lg hover:bg-opacity-90 transition duration-300">
+                            Get Basic Plan
+                        </a>
+                    </div>
+
+                    <div class="p-8 border-4 border-accent bg-primary text-white rounded-xl shadow-2xl scale-105 flex flex-col justify-between">
+                        <div>
+                            <div class="text-center mb-4">
+                                <span class="bg-accent text-primary text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">Recommended</span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-2">Standard</h3>
+                            <p class="text-sm text-gray-300 mb-4">Ideal for multiple gadgets and home offices.</p>
+                            <div class="text-4xl font-extrabold text-accent mb-4">
+                                ₱1,199 <span class="text-xl text-gray-300 font-normal">/ month</span>
+                            </div>
+                            <div class="text-5xl font-extrabold text-white mb-6">150<span class="text-3xl">Mbps</span></div>
+                            
+                            <ul class="space-y-3 text-gray-300 mb-8">
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Smooth HD streaming on 4K devices
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Competitive Online Gaming
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Reliable Video Conferencing
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="mt-4 text-center block bg-accent text-primary font-bold py-3 rounded-lg hover:bg-opacity-80 transition duration-300 shadow-lg">
+                            Choose Standard
+                        </a>
+                    </div>
+
+                    <div class="p-8 border-2 border-gray-200 rounded-xl shadow-xl hover:border-accent transition duration-300 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold text-primary mb-2">Premium PRO</h3>
+                            <p class="text-sm text-gray-500 mb-4">Maximum speed for power users.</p>
+                            <div class="text-4xl font-extrabold text-accent mb-4">
+                                ₱1,350 <span class="text-xl text-gray-600 font-normal">/ month</span>
+                            </div>
+                            <div class="text-5xl font-extrabold text-primary mb-6">200<span class="text-3xl">Mbps</span></div>
+                            
+                            <ul class="space-y-3 text-gray-600 mb-8">
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Ultra HD/4K streaming on ALL devices
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Heavy-duty file transfers & backups
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Multi-user video conferencing
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="mt-4 text-center block bg-primary text-white font-semibold py-3 rounded-lg hover:bg-opacity-90 transition duration-300">
+                            Upgrade to PRO
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-16 lg:py-24 bg-primary text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-center mb-4">Contact & Support</h2>
+                    <p class="text-xl text-gray-300 text-center mb-10">We're here to help! Get in touch with our team.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                    
+                    <div class="lg:col-span-2 bg-gray-900 p-8 rounded-xl shadow-2xl">
+                        <h3 class="text-2xl font-bold text-accent mb-6">Send us a message</h3>
+                        <form id="contactForm" class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-300 mb-2">
+                                    Full Name
+                                </label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    required
+                                    class="w-full px-5 py-3 rounded-lg border border-gray-700 focus:ring-accent focus:border-accent bg-gray-800 text-white placeholder-gray-400 shadow-inner"
+                                    placeholder="Juan Dela Cruz"
+                                />
+                            </div>
+
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-300 mb-2">
+                                    Email Address
+                                </label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    required
+                                    class="w-full px-5 py-3 rounded-lg border border-gray-700 focus:ring-accent focus:border-accent bg-gray-800 text-white placeholder-gray-400 shadow-inner"
+                                    placeholder="juan@example.com"
+                                />
+                            </div>
+
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-300 mb-2">
+                                    Phone Number
+                                </label>
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    required
+                                    class="w-full px-5 py-3 rounded-lg border border-gray-700 focus:ring-accent focus:border-accent bg-gray-800 text-white placeholder-gray-400 shadow-inner"
+                                    placeholder="0947-517-8360"
+                                />
+                            </div>
+
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-300 mb-2">
+                                    Message
+                                </label>
+                                <textarea
+                                    id="message"
+                                    required
+                                    rows="4"
+                                    class="w-full px-5 py-3 rounded-lg border border-gray-700 focus:ring-accent focus:border-accent bg-gray-800 text-white placeholder-gray-400 shadow-inner resize-none"
+                                    placeholder="How can we help you?"
+                                ></textarea>
+                            </div>
+                            
+                            <button
+                                type="submit"
+                                class="w-full bg-accent text-primary font-bold py-3 rounded-lg text-lg hover:bg-opacity-90 transition duration-300 transform hover:scale-105 shadow-xl"
+                            >
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="space-y-8">
+                        
+                        <h3 class="text-2xl font-bold text-white mb-4">Get in touch</h3>
+
+                        <div class="flex items-start space-x-4 p-4 bg-gray-800 rounded-lg shadow-sm">
+                            <div class="bg-blue-100 p-3 rounded-lg">
+                                <svg class="h-6 w-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-white mb-1">Phone</h4>
+                                <a href="tel:09475178360" class="text-accent text-lg font-bold hover:underline">0947-517-8360</a>
+                                <p class="text-sm text-gray-400 mt-1">Available 24/7</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4 p-4 bg-gray-800 rounded-lg shadow-sm">
+                            <div class="bg-green-100 p-3 rounded-lg">
+                                <svg class="h-6 w-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-2 4v7a2 2 0 01-2 2H5a2 2 0 01-2-2v-7"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-white mb-1">Email</h4>
+                                <a href="mailto:shipmatesnetwork.inc@gmail.com" class="text-accent text-lg hover:underline">shipmatesnetwork.inc@gmail.com</a>
+                                <p class="text-sm text-gray-400 mt-1">We'll respond within 24 hours</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4 p-4 bg-gray-800 rounded-lg shadow-sm">
+                            <div class="bg-orange-100 p-3 rounded-lg">
+                                <svg class="h-6 w-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-white mb-1">Support Hours</h4>
+                                <p class="text-white text-lg font-bold">24/7 Support Hours</p>
+                                <p class="text-sm text-gray-400 mt-1">Always here to help</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-800 p-6 rounded-lg border-l-4 border-accent shadow-lg">
+                            <h4 class="text-xl font-bold text-white mb-3">Need Technical Support?</h4>
+                            <p class="text-gray-300 text-sm mb-4">
+                                Our technical support team is ready to assist you with any connection issues or technical questions.
+                            </p>
+                            <ul class="text-sm text-gray-400 space-y-2">
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 text-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Connection troubleshooting
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 text-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Router setup assistance
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 text-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Speed optimization
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 text-accent mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Account management
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-gray-900 text-gray-400 py-8">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="mb-4">
+                    <a href="#hero" class="text-lg font-extrabold text-white">
+                        <span class="text-accent">SHIPMATES</span>NETWORK
+                    </a>
+                </div>
+                <div class="flex justify-center space-x-6 text-sm mb-4">
+                    <a href="#packages" class="hover:text-accent transition duration-300">Packages</a>
+                    <a href="#" class="hover:text-accent transition duration-300">Terms of Service</a>
+                    <a href="#" class="hover:text-accent transition duration-300">Privacy Policy</a>
+                    <a href="#contact" class="hover:text-accent transition duration-300">Careers</a>
+                </div>
+                <p class="text-sm">
+                    2024 Shipmates Network. All rights reserved. | 
+                    <a href="https://shipmatesnetwork.ph" class="text-accent hover:underline ml-1">www.ShipmatesNetwork.ph</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('contactForm');
+
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const requiredFields = ['name', 'email', 'phone', 'message'];
+                let isValid = true;
+                
+                requiredFields.forEach(field => {
+                    const input = document.getElementById(field);
+                    if (!input.value.trim()) {
+                        isValid = false;
+                        input.classList.add('border-red-500');
+                    } else {
+                        input.classList.remove('border-red-500');
+                    }
+                });
+
+                const email = document.getElementById('email').value;
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (email && !emailRegex.test(email)) {
+                    isValid = false;
+                    document.getElementById('email').classList.add('border-red-500');
+                }
+
+                if (isValid) {
+                    const submitButton = form.querySelector('button[type="submit"]');
+                    const originalText = submitButton.textContent;
+                    
+                    submitButton.textContent = 'Sending...';
+                    submitButton.disabled = true;
+                    
+                    setTimeout(() => {
+                        alert('Thank you for contacting us! We will get back to you within 24 hours.');
+                        
+                        form.reset();
+                        form.querySelectorAll('input, textarea').forEach(input => {
+                            input.classList.remove('border-red-500');
+                        });
+                        
+                        submitButton.textContent = originalText;
+                        submitButton.disabled = false;
+                        
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }, 1500);
+                } else {
+                    alert('Please fill in all fields correctly.');
+                }
+            });
+
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            const mobileMenuButton = document.querySelector('button[aria-controls="mobile-menu"]');
+            const navLinks = document.querySelector('.sm\\:ml-6');
+            
+            if (mobileMenuButton && navLinks) {
+                mobileMenuButton.addEventListener('click', function() {
+                    const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                    this.setAttribute('aria-expanded', !isExpanded);
+                    
+                    if (isExpanded) {
+                        navLinks.classList.add('hidden');
+                    } else {
+                        navLinks.classList.remove('hidden');
+                        navLinks.classList.add('flex', 'flex-col', 'absolute', 'top-16', 'left-0', 'right-0', 'bg-white', 'shadow-lg', 'p-4', 'space-y-4');
+                    }
+                });
+            }
+
+            const packageCards = document.querySelectorAll('[id="packages"] > div > div');
+            packageCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-4px)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+
+            const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
+            phoneLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                        e.preventDefault();
+                        navigator.clipboard.writeText(this.textContent).then(() => {
+                            const originalText = this.textContent;
+                            this.textContent = 'Copied!';
+                            setTimeout(() => {
+                                this.textContent = originalText;
+                            }, 2000);
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
